@@ -274,8 +274,8 @@
                 type: "GET",
                 datatype:"JSON",
                 success: function (data) {
-                    console.log(data)
-                    if(data != undefined){
+                    console.log(data.length)
+                    if(data.length > 2){
                         json = JSON.parse(data);
                         //console.log(json.files);
                         getUploadData6(json.files);
